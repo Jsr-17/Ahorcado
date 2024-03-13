@@ -1,5 +1,5 @@
 
-def juego(palabra='palabra',acertada=False,palabraJuego='',array=[],arrayno=[]):
+def juego(palabra='caqui',acertada=False,palabraJuego='',array=[],arrayno=[]):
 
 
     print("Hola este es el juego del ahorcado tienes que adivinar una palabra")
@@ -24,11 +24,10 @@ def juego(palabra='palabra',acertada=False,palabraJuego='',array=[],arrayno=[]):
         print("\nLetras encontradas:\n")
         for i in range(len(array)):
                 print(array[i],end=' ')
-        print("\n \nLetras no  encontradas:\n")
+        print("\n \nLetras no  encontradas:")
 
         for i in range(len(arrayno)):
-                print(arrayno[i],end=' ')
-        
+                print(arrayno[i])
 
         palabraJuego=''
         for i in range(len(palabra)):
